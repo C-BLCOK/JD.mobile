@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--   设置视口标签 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0"
+    />
+    <!--  引入CSS3初始化样式 -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--  引入CSS样式 -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 引入搜索模块界面样式 -->
+    <link rel="stylesheet" href="css/download.css" />
+    <script src="js/index.js"></script>
+    <title>JD.Mobile</title>
+  </head>
+  <body class="body">
+    <!-- ======================================  download-module  ========================================================== -->
+    <header class="download">
+      <div class="close float-left">
+        <img src="images/close.png" alt="" />
+      </div>
+      <div class="logo float-left">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <div class="content">
+        <h4>打开APP，购物更轻松</h4>
+      </div>
+      <div class="action"><span>立即打开</span></div>
+    </header>
+    <!-- **************************************  download-web  ************************************************************* -->
+    <div class="download-app">
+      <p>此功能需访问京东APP</p>
+      <ul class="download-body">
+        <li class="l">继续逛逛</li>
+        <li class="r">下载京东APP</li>
+      </ul>
+      <div class="download-floot">
+        开发者:北京京东世纪贸易有限公司 | 版本:10.0.10<br />更新时间:2021-7-27
+        应用权限与隐私政策信息:<a href="javascript:;">点击查看</a>
+      </div>
+    </div>
+    <script>
+      var download = document.querySelector(".download");
+      var openDownload = document.querySelector(".action");
+      var closeDownload = document.querySelector(".close");
+      var downloadApp = document.querySelector(".download-app");
+      var body = document.querySelector(".body");
+      var back = document
+        .querySelector(".download-app")
+        .querySelector(".download-body")
+        .querySelector(".l");
+      //   关闭下载推荐
+      closeDownload.addEventListener("click", function () {
+        download.style.display = "none";
+      });
+      // 跳转下载界面
+      openDownload.addEventListener("click", function () {
+        downloadApp.style.display = "block";
+        body.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+      });
+      //关闭下载界面
+      back.addEventListener("click", function () {
+        downloadApp.style.display = "none";
+        body.style.backgroundColor = "";
+      });
+    </script>
+    <!-- ======================================  search-module  ============================================================ -->
+    <div class="search-wrap body">
+      <div class="line"><span></span></div>
+      <div class="search">
+        <div class="search-input">
+          <ul>
+            <li class="jd"></li>
+            <li class="glass"></li>
+          </ul>
+          <input
+            class="input"
+            type="text"
+            placeholder="左侧按钮可进入搜索页面"
+          />
+        </div>
+      </div>
+      <div class="login"><span>登录</span></div>
+    </div>
+    <script>
+      /* =======================跳转搜索页面=================== */
+      var search = document.querySelector(".line");
+      search.addEventListener("click", function () {
+        location.replace("html/search.html");
+      });
+      /* ========================  跳转登录页面  ========== */
+      var login = document.querySelector(".login");
+      login.addEventListener("click", function () {
+        location.replace("html/login.html");
+      });
+    </script>
+    <!-- ============================================  main-module  =========================================================-->
+    <div class="main">
+      <div class="banner">
+        <ul>
+          <li><img src="upload/pic3.dpg" alt="" /></li>
+          <li><img src="upload/pic22.dpg" alt="" /></li>
+          <li><img src="upload/pic33.dpg" alt="" /></li>
+          <li><img src="upload/pic11.dpg" alt="" /></li>
+          <li><img src="upload/pic1.dpg" alt="" /></li>
+          <li><img src="upload/pic2.dpg" alt="" /></li>
+          <li><img src="upload/pic3.dpg" alt="" /></li>
+        </ul>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.download-app {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 291px;
+  height: 173px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.download-app p {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: #2e2d2d;
+  line-height: 15px;
+  margin-top: 35px;
+}
+.download-body {
+  height: 31px;
+  list-style: none;
+  line-height: 31px;
+  text-align: center;
+  color: #f2140c;
+  margin-top: 20px;
+  padding: 0 0 0 15px;
+}
+.l,
+.r {
+  float: left;
+  width: 122px;
+  height: 100%;
+  border: 1px solid #f2140c;
+  border-radius: 16px;
+}
+.r {
+  color: #fff;
+  background-color: #f2140c;
+  margin-left: 15px;
+}
+.download-floot {
+  margin-top: 18px;
+  padding-top: 10px;
+  font-size: 10px;
+  color: #8c8c8c;
+  line-height: 15px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.download-floot a {
+  color: #8c8c8c;
+}

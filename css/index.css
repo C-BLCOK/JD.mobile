@@ -1,0 +1,188 @@
+.download {
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-image: url(../images/bg.png);
+  background-size: 100% 45px;
+}
+.float-left {
+  float: left;
+}
+.download .close {
+  width: 10px;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 2.5%;
+}
+.download .close img {
+  width: 100%;
+  height: auto;
+}
+.download .logo {
+  width: 35px;
+  height: 45px;
+  margin-left: 5%;
+  margin-right: 2.5%;
+}
+.download .logo img {
+  width: 100%;
+  height: auto;
+  margin-top: 7px;
+}
+.download .content {
+  float: left;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+}
+.download .content h4 {
+  color: #fff;
+}
+
+.download .action {
+  width: 31.88%;
+  height: 100%;
+  float: right;
+  text-align: center;
+  font-size: 15px;
+  line-height: 45px;
+  color: #fff;
+}
+
+/* =================================================================================================== */
+.search-wrap {
+  height: 44px;
+  position: fixed;
+  background-color: #c82519;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+}
+.line span {
+  display: block;
+  width: 20px;
+  height: 18px;
+  margin: 14px 0 0 15px;
+  background: url(../images/s-btn.png) no-repeat;
+  background-size: 100% 100%;
+}
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+}
+.login span {
+  display: block;
+  margin: 14px 0;
+  color: #fff;
+  font-size: 14px;
+}
+.search {
+  height: 44px;
+  margin: 0 50px;
+  overflow: hidden;
+}
+.search .search-input {
+  height: 30px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-top: 7px;
+  position: relative;
+}
+.search-input ul {
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.search-input ul li {
+  float: left;
+}
+.jd {
+  width: 20px;
+  height: 15px;
+  margin-left: 15px;
+  background: url(../images/jd.png) no-repeat;
+  background-size: 20px 15px;
+}
+.jd::after {
+  content: "";
+  display: block;
+  height: 15px;
+  border-right: 1px solid #ddd;
+  margin-left: 25px;
+  margin-top: 0;
+}
+.glass {
+  display: block;
+  width: 18px;
+  height: 15px;
+  background: url(../images/jd-sprites.png) no-repeat -83px 0;
+  background-size: 200px auto;
+  margin-left: 15px;
+}
+
+/* ==============输入框自动宽度怎么设置==================== */
+.input {
+  height: 30px;
+  width: 180px;
+  margin-left: 75px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+}
+/* ==================================  main  ============================================= */
+.main {
+  width: 100%;
+  background: url(../images/banner-bj.png) no-repeat;
+  background-size: 100% 200px;
+  overflow: hidden;
+}
+.banner {
+  position: relative;
+  margin-top: 60px;
+  width: 350px;
+  height: 140px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.banner ul {
+  width: 700%;
+  height: 100%;
+  margin-left: -100%;
+}
+.banner ul li {
+  width: 350px;
+  height: 100%;
+  float: left;
+}
+.banner ul li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+.banner ol {
+  position: absolute;
+  bottom: 5px;
+  left: 100px;
+}
+.banner ol li {
+  float: left;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+.banner .current {
+  background-color: #c82519;
+}

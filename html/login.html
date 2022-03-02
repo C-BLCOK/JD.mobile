@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="login-box">
+      <!-- *******  头部  ***** -->
+      <div class="header">
+        <div class="goback"></div>
+        <div class="content">京东登录注册</div>
+      </div>
+      <!-- ***********  注册  *************** -->
+      <div class="login">
+        <ul>
+          <li class="top">
+            <div class="l">+86</div>
+            <div class="r"><input type="tel" placeholder="请输入手机号" /></div>
+          </li>
+          <li class="bottom">
+            <div class="yzm">
+              <input type="text" placeholder="请输入收到的验证码" />
+              <button>获取验证码</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="load">登录</div>
+      <div class="miss">
+        <div class="zh-load">账号密码登录</div>
+        <div class="sj-login">手机快速注册</div>
+      </div>
+      <div class="footer">
+        <div class="top">其他登录方式</div>
+        <div class="middle">
+          <ul>
+            <li><span class="qq"></span>QQ</li>
+            <li><span class="vx"></span>微信</li>
+            <li><span class="apple"></span>苹果</li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <input type="checkbox" />
+          若您输入的手机号未注册，将为您直接注册，注册即视为同意<span>
+            京东用户注册协议，用户隐私政策</span
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      var goback = document.querySelector(".goback");
+      goback.addEventListener("click", function () {
+        location.replace("../index.html");
+      });
+    </script>
+    <!-- =================================== -->
+  </body>
+</html>

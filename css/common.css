@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  font-family: -apple-system, Helvetica, sans-serif;
+}
